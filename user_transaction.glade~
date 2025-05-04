@@ -11,43 +11,44 @@
         <property name="visible">True</property>
         <property name="can-focus">False</property>
         <child>
-          <object class="GtkOverlay" id="admin_menu">
+          <object class="GtkOverlay" id="user_transaction_menu">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <child>
               <object class="GtkImage">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_other_screen.png</property>
+                <property name="pixbuf">pictures\user_transaction.png</property>
               </object>
               <packing>
                 <property name="index">-1</property>
               </packing>
             </child>
             <child type="overlay">
-              <object class="GtkButton" id="changepass_button">
-                <property name="width-request">245</property>
-                <property name="height-request">210</property>
+              <object class="GtkButton" id="user_balance_button">
+                <property name="width-request">210</property>
+                <property name="height-request">175</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
                 <property name="halign">start</property>
                 <property name="valign">start</property>
-                <property name="margin-start">110</property>
-                <property name="margin-top">210</property>
+                <property name="margin-start">45</property>
+                <property name="margin-top">230</property>
                 <property name="relief">none</property>
               </object>
             </child>
             <child type="overlay">
-              <object class="GtkButton" id="intcalcu_button">
-                <property name="width-request">245</property>
-                <property name="height-request">210</property>
+              <object class="GtkButton" id="user_deposit_button">
+                <property name="width-request">210</property>
+                <property name="height-request">175</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
-                <property name="halign">center</property>
-                <property name="valign">center</property>
-                <property name="margin-top">30</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">285</property>
+                <property name="margin-top">230</property>
                 <property name="relief">none</property>
               </object>
               <packing>
@@ -55,16 +56,33 @@
               </packing>
             </child>
             <child type="overlay">
-              <object class="GtkButton" id="banktrans_button">
-                <property name="width-request">245</property>
-                <property name="height-request">210</property>
+              <object class="GtkButton" id="user_withdraw_button">
+                <property name="width-request">210</property>
+                <property name="height-request">175</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">525</property>
+                <property name="margin-top">230</property>
+                <property name="relief">none</property>
+              </object>
+              <packing>
+                <property name="index">1</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkButton" id="user_other_button">
+                <property name="width-request">210</property>
+                <property name="height-request">175</property>
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
                 <property name="halign">end</property>
                 <property name="valign">end</property>
-                <property name="margin-end">110</property>
-                <property name="margin-bottom">180</property>
+                <property name="margin-end">45</property>
+                <property name="margin-bottom">200</property>
                 <property name="relief">none</property>
               </object>
               <packing>
@@ -72,7 +90,7 @@
               </packing>
             </child>
             <child type="overlay">
-              <object class="GtkButton" id="menu_back_button">
+              <object class="GtkButton" id="user_logout_button">
                 <property name="width-request">140</property>
                 <property name="height-request">0</property>
                 <property name="visible">True</property>
@@ -84,173 +102,13 @@
                 <property name="relief">none</property>
               </object>
               <packing>
-                <property name="index">3</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkLabel" id="welcome_name">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-start">530</property>
-                <property name="margin-top">125</property>
-                <attributes>
-                  <attribute name="font-desc" value="Monospace Bold 18"/>
-                  <attribute name="foreground" value="#fffff6f60000"/>
-                </attributes>
-              </object>
-              <packing>
                 <property name="index">4</property>
               </packing>
             </child>
           </object>
           <packing>
-            <property name="name">page15</property>
-            <property name="title" translatable="yes">page15</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkOverlay" id="user_balance_search">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_balance_search.png</property>
-              </object>
-              <packing>
-                <property name="index">-1</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkEntry" id="user_bal_search">
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">340</property>
-                <property name="margin-start">340</property>
-                <property name="margin-top">307</property>
-                <property name="max-length">30</property>
-                <property name="has-frame">False</property>
-                <property name="max-width-chars">30</property>
-                <property name="input-purpose">digits</property>
-              </object>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="user_balser_button">
-                <property name="width-request">140</property>
-                <property name="height-request">0</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">center</property>
-                <property name="valign">center</property>
-                <property name="margin-top">210</property>
-                <property name="relief">none</property>
-              </object>
-              <packing>
-                <property name="index">1</property>
-              </packing>
-            </child>
-          </object>
-          <packing>
-            <property name="position">1</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkOverlay" id="user_balance_check">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_balance_check.png</property>
-              </object>
-              <packing>
-                <property name="index">-1</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkEntry" id="uname_bal_search">
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">480</property>
-                <property name="margin-start">480</property>
-                <property name="margin-top">253</property>
-                <property name="max-length">10</property>
-                <property name="has-frame">False</property>
-                <property name="width-chars">10</property>
-                <property name="max-width-chars">10</property>
-                <property name="caps-lock-warning">False</property>
-              </object>
-            </child>
-            <child type="overlay">
-              <object class="GtkEntry" id="ubalance_search">
-                <property name="height-request">0</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">480</property>
-                <property name="margin-start">480</property>
-                <property name="margin-top">333</property>
-                <property name="max-length">4</property>
-                <property name="visibility">False</property>
-                <property name="has-frame">False</property>
-                <property name="invisible-char">●</property>
-                <property name="width-chars">4</property>
-                <property name="max-width-chars">4</property>
-                <property name="input-purpose">digits</property>
-              </object>
-              <packing>
-                <property name="index">1</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="uback_bal_button">
-                <property name="width-request">140</property>
-                <property name="height-request">0</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">365</property>
-                <property name="margin-start">365</property>
-                <property name="margin-top">385</property>
-                <property name="relief">none</property>
-              </object>
-              <packing>
-                <property name="index">2</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="uprint_bal_button">
-                <property name="width-request">140</property>
-                <property name="height-request">0</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">520</property>
-                <property name="margin-start">520</property>
-                <property name="margin-top">385</property>
-                <property name="relief">none</property>
-              </object>
-              <packing>
-                <property name="index">3</property>
-              </packing>
-            </child>
-          </object>
-          <packing>
-            <property name="position">2</property>
+            <property name="name">page16</property>
+            <property name="title" translatable="yes">page16</property>
           </packing>
         </child>
         <child>
@@ -302,7 +160,7 @@
             </child>
           </object>
           <packing>
-            <property name="position">3</property>
+            <property name="position">1</property>
           </packing>
         </child>
         <child>
@@ -407,22 +265,6 @@
               </packing>
             </child>
             <child type="overlay">
-              <object class="GtkButton" id="user_balback">
-                <property name="width-request">140</property>
-                <property name="height-request">0</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">center</property>
-                <property name="valign">center</property>
-                <property name="margin-top">320</property>
-                <property name="relief">none</property>
-              </object>
-              <packing>
-                <property name="index">5</property>
-              </packing>
-            </child>
-            <child type="overlay">
               <object class="GtkLabel" id="uproccesed_bal_receipt">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
@@ -440,42 +282,8 @@
                 <property name="index">5</property>
               </packing>
             </child>
-          </object>
-          <packing>
-            <property name="position">4</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkOverlay" id="user_deposit_search">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_deposit_search.png</property>
-              </object>
-              <packing>
-                <property name="index">-1</property>
-              </packing>
-            </child>
             <child type="overlay">
-              <object class="GtkEntry" id="user_dep_search">
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">340</property>
-                <property name="margin-start">340</property>
-                <property name="margin-top">307</property>
-                <property name="max-length">30</property>
-                <property name="has-frame">False</property>
-                <property name="max-width-chars">30</property>
-                <property name="input-purpose">digits</property>
-              </object>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="user_depser_button">
+              <object class="GtkButton" id="user_balback">
                 <property name="width-request">140</property>
                 <property name="height-request">0</property>
                 <property name="visible">True</property>
@@ -483,16 +291,16 @@
                 <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
-                <property name="margin-top">210</property>
+                <property name="margin-top">320</property>
                 <property name="relief">none</property>
               </object>
               <packing>
-                <property name="index">1</property>
+                <property name="index">5</property>
               </packing>
             </child>
           </object>
           <packing>
-            <property name="position">5</property>
+            <property name="position">2</property>
           </packing>
         </child>
         <child>
@@ -647,7 +455,7 @@
             </child>
           </object>
           <packing>
-            <property name="position">6</property>
+            <property name="position">3</property>
           </packing>
         </child>
         <child>
@@ -720,7 +528,7 @@
             </child>
           </object>
           <packing>
-            <property name="position">7</property>
+            <property name="position">4</property>
           </packing>
         </child>
         <child>
@@ -772,7 +580,7 @@
             </child>
           </object>
           <packing>
-            <property name="position">8</property>
+            <property name="position">5</property>
           </packing>
         </child>
         <child>
@@ -841,6 +649,24 @@
               </packing>
             </child>
             <child type="overlay">
+              <object class="GtkLabel" id="udate_dep_receipt">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-left">570</property>
+                <property name="margin-start">570</property>
+                <property name="margin-top">240</property>
+                <attributes>
+                  <attribute name="font-desc" value="Monospace Bold 10"/>
+                  <attribute name="foreground" value="#ffffffffffff"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="index">3</property>
+              </packing>
+            </child>
+            <child type="overlay">
               <object class="GtkLabel" id="utime_dep_receipt">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
@@ -874,40 +700,6 @@
               </object>
               <packing>
                 <property name="index">4</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="user_balback3">
-                <property name="width-request">140</property>
-                <property name="height-request">0</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">center</property>
-                <property name="valign">center</property>
-                <property name="margin-top">440</property>
-                <property name="relief">none</property>
-              </object>
-              <packing>
-                <property name="index">5</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkLabel" id="udate_dep_receipt">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">570</property>
-                <property name="margin-start">570</property>
-                <property name="margin-top">240</property>
-                <attributes>
-                  <attribute name="font-desc" value="Monospace Bold 10"/>
-                  <attribute name="foreground" value="#ffffffffffff"/>
-                </attributes>
-              </object>
-              <packing>
-                <property name="index">3</property>
               </packing>
             </child>
             <child type="overlay">
@@ -964,42 +756,8 @@
                 <property name="index">8</property>
               </packing>
             </child>
-          </object>
-          <packing>
-            <property name="position">9</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkOverlay" id="user_withdraw_search">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_withdraw_search.png</property>
-              </object>
-              <packing>
-                <property name="index">-1</property>
-              </packing>
-            </child>
             <child type="overlay">
-              <object class="GtkEntry" id="admin_with_search">
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">340</property>
-                <property name="margin-start">340</property>
-                <property name="margin-top">307</property>
-                <property name="max-length">30</property>
-                <property name="has-frame">False</property>
-                <property name="max-width-chars">30</property>
-                <property name="input-purpose">digits</property>
-              </object>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="user_withser_button">
+              <object class="GtkButton" id="user_balback3">
                 <property name="width-request">140</property>
                 <property name="height-request">0</property>
                 <property name="visible">True</property>
@@ -1007,16 +765,16 @@
                 <property name="receives-default">True</property>
                 <property name="halign">center</property>
                 <property name="valign">center</property>
-                <property name="margin-top">210</property>
+                <property name="margin-top">440</property>
                 <property name="relief">none</property>
               </object>
               <packing>
-                <property name="index">1</property>
+                <property name="index">5</property>
               </packing>
             </child>
           </object>
           <packing>
-            <property name="position">10</property>
+            <property name="position">6</property>
           </packing>
         </child>
         <child>
@@ -1171,7 +929,7 @@
             </child>
           </object>
           <packing>
-            <property name="position">11</property>
+            <property name="position">7</property>
           </packing>
         </child>
         <child>
@@ -1223,24 +981,6 @@
               </packing>
             </child>
             <child type="overlay">
-              <object class="GtkButton" id="user_withconfirm_button">
-                <property name="width-request">140</property>
-                <property name="height-request">0</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">start</property>
-                <property name="valign">center</property>
-                <property name="margin-left">520</property>
-                <property name="margin-start">520</property>
-                <property name="margin-top">115</property>
-                <property name="relief">none</property>
-              </object>
-              <packing>
-                <property name="index">2</property>
-              </packing>
-            </child>
-            <child type="overlay">
               <object class="GtkButton" id="user_withback_button">
                 <property name="width-request">140</property>
                 <property name="height-request">0</property>
@@ -1258,9 +998,27 @@
                 <property name="index">2</property>
               </packing>
             </child>
+            <child type="overlay">
+              <object class="GtkButton" id="user_withconfirm_button">
+                <property name="width-request">140</property>
+                <property name="height-request">0</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">start</property>
+                <property name="valign">center</property>
+                <property name="margin-left">520</property>
+                <property name="margin-start">520</property>
+                <property name="margin-top">115</property>
+                <property name="relief">none</property>
+              </object>
+              <packing>
+                <property name="index">2</property>
+              </packing>
+            </child>
           </object>
           <packing>
-            <property name="position">12</property>
+            <property name="position">8</property>
           </packing>
         </child>
         <child>
@@ -1313,11 +1071,11 @@
             </child>
           </object>
           <packing>
-            <property name="position">13</property>
+            <property name="position">9</property>
           </packing>
         </child>
         <child>
-          <object class="GtkOverlay" id="admin_withdraw_confirm3">
+          <object class="GtkOverlay" id="user_withdraw_confirm2">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <child>
@@ -1365,7 +1123,7 @@
             </child>
           </object>
           <packing>
-            <property name="position">14</property>
+            <property name="position">10</property>
           </packing>
         </child>
         <child>
@@ -1434,6 +1192,24 @@
               </packing>
             </child>
             <child type="overlay">
+              <object class="GtkLabel" id="udate_with_receipt3">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-left">570</property>
+                <property name="margin-start">570</property>
+                <property name="margin-top">240</property>
+                <attributes>
+                  <attribute name="font-desc" value="Monospace Bold 10"/>
+                  <attribute name="foreground" value="#ffffffffffff"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="index">3</property>
+              </packing>
+            </child>
+            <child type="overlay">
               <object class="GtkLabel" id="utime_with_receipt">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
@@ -1467,40 +1243,6 @@
               </object>
               <packing>
                 <property name="index">4</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="use_balback3">
-                <property name="width-request">140</property>
-                <property name="height-request">0</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">center</property>
-                <property name="valign">center</property>
-                <property name="margin-top">440</property>
-                <property name="relief">none</property>
-              </object>
-              <packing>
-                <property name="index">5</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkLabel" id="udate_with_receipt3">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">570</property>
-                <property name="margin-start">570</property>
-                <property name="margin-top">240</property>
-                <attributes>
-                  <attribute name="font-desc" value="Monospace Bold 10"/>
-                  <attribute name="foreground" value="#ffffffffffff"/>
-                </attributes>
-              </object>
-              <packing>
-                <property name="index">3</property>
               </packing>
             </child>
             <child type="overlay">
@@ -1557,9 +1299,25 @@
                 <property name="index">8</property>
               </packing>
             </child>
+            <child type="overlay">
+              <object class="GtkButton" id="use_balback3">
+                <property name="width-request">140</property>
+                <property name="height-request">0</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="margin-top">440</property>
+                <property name="relief">none</property>
+              </object>
+              <packing>
+                <property name="index">5</property>
+              </packing>
+            </child>
           </object>
           <packing>
-            <property name="position">15</property>
+            <property name="position">11</property>
           </packing>
         </child>
         <child>
@@ -1627,7 +1385,7 @@
             </child>
           </object>
           <packing>
-            <property name="position">16</property>
+            <property name="position">12</property>
           </packing>
         </child>
         <child>
@@ -1661,77 +1419,163 @@
           <packing>
             <property name="name">page0</property>
             <property name="title" translatable="yes">page0</property>
-            <property name="position">17</property>
+            <property name="position">13</property>
           </packing>
         </child>
         <child>
-          <object class="GtkStack" id="user_passloading_screen">
+          <object class="GtkOverlay" id="user_other_menu">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <child>
-              <object class="GtkImage" id="authen11">
+              <object class="GtkImage">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_authen_loading1.png</property>
+                <property name="pixbuf">pictures\user_other_screen.png</property>
               </object>
               <packing>
-                <property name="name">page0</property>
-                <property name="title" translatable="yes">page0</property>
+                <property name="index">-1</property>
               </packing>
             </child>
-            <child>
-              <object class="GtkImage" id="authen12">
+            <child type="overlay">
+              <object class="GtkButton" id="user_changepass_button">
+                <property name="width-request">210</property>
+                <property name="height-request">175</property>
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_authen_loading2.png</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">45</property>
+                <property name="margin-top">230</property>
+                <property name="relief">none</property>
+              </object>
+            </child>
+            <child type="overlay">
+              <object class="GtkButton" id="user_intcalcu_button1">
+                <property name="width-request">210</property>
+                <property name="height-request">175</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">285</property>
+                <property name="margin-top">230</property>
+                <property name="relief">none</property>
               </object>
               <packing>
-                <property name="name">page1</property>
-                <property name="title" translatable="yes">page1</property>
-                <property name="position">1</property>
+                <property name="index">1</property>
               </packing>
             </child>
-            <child>
-              <object class="GtkImage" id="authen13">
+            <child type="overlay">
+              <object class="GtkButton" id="user_timedep_button">
+                <property name="width-request">210</property>
+                <property name="height-request">175</property>
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_authen_loading3.png</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">525</property>
+                <property name="margin-top">230</property>
+                <property name="relief">none</property>
               </object>
               <packing>
-                <property name="name">page2</property>
-                <property name="title" translatable="yes">page2</property>
-                <property name="position">2</property>
+                <property name="index">1</property>
               </packing>
             </child>
-            <child>
-              <object class="GtkImage" id="authen14">
+            <child type="overlay">
+              <object class="GtkButton" id="user_bank_button">
+                <property name="width-request">210</property>
+                <property name="height-request">175</property>
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_authen_loading4.png</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">end</property>
+                <property name="valign">end</property>
+                <property name="margin-end">60</property>
+                <property name="margin-bottom">195</property>
+                <property name="relief">none</property>
               </object>
               <packing>
-                <property name="name">page3</property>
-                <property name="title" translatable="yes">page3</property>
-                <property name="position">3</property>
+                <property name="index">2</property>
               </packing>
             </child>
-            <child>
-              <object class="GtkImage" id="authen15">
+            <child type="overlay">
+              <object class="GtkButton" id="user_backother_button">
+                <property name="width-request">140</property>
+                <property name="height-request">0</property>
                 <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_authen_loading5.png</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="margin-top">320</property>
+                <property name="relief">none</property>
               </object>
               <packing>
-                <property name="name">page4</property>
-                <property name="title" translatable="yes">page4</property>
-                <property name="position">4</property>
+                <property name="index">4</property>
               </packing>
             </child>
           </object>
           <packing>
-            <property name="name">page1</property>
-            <property name="title" translatable="yes">page1</property>
-            <property name="position">18</property>
+            <property name="name">page15</property>
+            <property name="title" translatable="yes">page15</property>
+            <property name="position">14</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkOverlay" id="user_change_pass1">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_change_pass.png</property>
+              </object>
+              <packing>
+                <property name="index">-1</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkButton" id="uno_change_button">
+                <property name="width-request">140</property>
+                <property name="height-request">0</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-left">365</property>
+                <property name="margin-start">365</property>
+                <property name="margin-top">340</property>
+                <property name="relief">none</property>
+              </object>
+            </child>
+            <child type="overlay">
+              <object class="GtkButton" id="uyes_change_button">
+                <property name="width-request">140</property>
+                <property name="height-request">0</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-left">520</property>
+                <property name="margin-start">520</property>
+                <property name="margin-top">340</property>
+                <property name="relief">none</property>
+              </object>
+              <packing>
+                <property name="index">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="name">page3</property>
+            <property name="title" translatable="yes">page3</property>
+            <property name="position">15</property>
           </packing>
         </child>
         <child>
@@ -1845,147 +1689,77 @@
           <packing>
             <property name="name">page2</property>
             <property name="title" translatable="yes">page2</property>
-            <property name="position">19</property>
+            <property name="position">16</property>
           </packing>
         </child>
         <child>
-          <object class="GtkOverlay" id="user_change_pass1">
+          <object class="GtkStack" id="user_passloading_screen">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <child>
-              <object class="GtkImage">
+              <object class="GtkImage" id="authen11">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_change_pass.png</property>
+                <property name="pixbuf">pictures\user_authen_loading1.png</property>
               </object>
               <packing>
-                <property name="index">-1</property>
+                <property name="name">page0</property>
+                <property name="title" translatable="yes">page0</property>
               </packing>
             </child>
-            <child type="overlay">
-              <object class="GtkButton" id="uno_change_button">
-                <property name="width-request">140</property>
-                <property name="height-request">0</property>
+            <child>
+              <object class="GtkImage" id="authen12">
                 <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">365</property>
-                <property name="margin-start">365</property>
-                <property name="margin-top">340</property>
-                <property name="relief">none</property>
-              </object>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="uyes_change_button">
-                <property name="width-request">140</property>
-                <property name="height-request">0</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">520</property>
-                <property name="margin-start">520</property>
-                <property name="margin-top">340</property>
-                <property name="relief">none</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_authen_loading2.png</property>
               </object>
               <packing>
-                <property name="index">1</property>
+                <property name="name">page1</property>
+                <property name="title" translatable="yes">page1</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="authen13">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_authen_loading3.png</property>
+              </object>
+              <packing>
+                <property name="name">page2</property>
+                <property name="title" translatable="yes">page2</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="authen14">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_authen_loading4.png</property>
+              </object>
+              <packing>
+                <property name="name">page3</property>
+                <property name="title" translatable="yes">page3</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="authen15">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_authen_loading5.png</property>
+              </object>
+              <packing>
+                <property name="name">page4</property>
+                <property name="title" translatable="yes">page4</property>
+                <property name="position">4</property>
               </packing>
             </child>
           </object>
           <packing>
-            <property name="name">page3</property>
-            <property name="title" translatable="yes">page3</property>
-            <property name="position">20</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkOverlay" id="user_other_screen">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_other_screen.png</property>
-              </object>
-              <packing>
-                <property name="index">-1</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="change_pass_button">
-                <property name="width-request">245</property>
-                <property name="height-request">210</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">110</property>
-                <property name="margin-start">110</property>
-                <property name="margin-top">210</property>
-                <property name="relief">none</property>
-              </object>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="interest_calcu_button">
-                <property name="width-request">245</property>
-                <property name="height-request">210</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">center</property>
-                <property name="valign">center</property>
-                <property name="margin-top">30</property>
-                <property name="relief">none</property>
-              </object>
-              <packing>
-                <property name="index">1</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="bank_transfer_button">
-                <property name="width-request">245</property>
-                <property name="height-request">210</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">end</property>
-                <property name="valign">end</property>
-                <property name="margin-right">110</property>
-                <property name="margin-end">110</property>
-                <property name="margin-bottom">180</property>
-                <property name="relief">none</property>
-              </object>
-              <packing>
-                <property name="index">2</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="other_back">
-                <property name="width-request">140</property>
-                <property name="height-request">0</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">center</property>
-                <property name="valign">center</property>
-                <property name="margin-top">325</property>
-                <property name="relief">none</property>
-              </object>
-              <packing>
-                <property name="index">3</property>
-              </packing>
-            </child>
-          </object>
-          <packing>
-            <property name="name">page4</property>
-            <property name="title" translatable="yes">page4</property>
-            <property name="position">21</property>
+            <property name="name">page1</property>
+            <property name="title" translatable="yes">page1</property>
+            <property name="position">17</property>
           </packing>
         </child>
         <child>
@@ -2019,8 +1793,750 @@
           <packing>
             <property name="name">page5</property>
             <property name="title" translatable="yes">page5</property>
+            <property name="position">18</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkOverlay" id="interest_calculator1">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\interest_calculator1.png</property>
+              </object>
+              <packing>
+                <property name="index">-1</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkEntry" id="user_balance">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-left">405</property>
+                <property name="margin-start">405</property>
+                <property name="margin-top">285</property>
+                <property name="max-length">30</property>
+                <property name="has-frame">False</property>
+                <property name="max-width-chars">30</property>
+                <property name="input-purpose">digits</property>
+              </object>
+            </child>
+            <child type="overlay">
+              <object class="GtkButton" id="ucalcu_back_button">
+                <property name="width-request">140</property>
+                <property name="height-request">0</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-left">365</property>
+                <property name="margin-start">365</property>
+                <property name="margin-top">340</property>
+                <property name="relief">none</property>
+              </object>
+              <packing>
+                <property name="index">1</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkButton" id="ucalcu_confirm_button">
+                <property name="width-request">140</property>
+                <property name="height-request">0</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-left">520</property>
+                <property name="margin-start">520</property>
+                <property name="margin-top">340</property>
+                <property name="relief">none</property>
+              </object>
+              <packing>
+                <property name="index">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="name">page13</property>
+            <property name="title" translatable="yes">page13</property>
+            <property name="position">19</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkOverlay" id="interest_calculator2">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\interest_calculator2.png</property>
+              </object>
+              <packing>
+                <property name="index">-1</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkLabel" id="1day_interest">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-left">365</property>
+                <property name="margin-start">365</property>
+                <property name="margin-top">240</property>
+                <attributes>
+                  <attribute name="font-desc" value="Monospace Bold 12"/>
+                  <attribute name="foreground" value="#ffffffffffff"/>
+                </attributes>
+              </object>
+            </child>
+            <child type="overlay">
+              <object class="GtkLabel" id="30day_interest">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-left">365</property>
+                <property name="margin-start">365</property>
+                <property name="margin-top">315</property>
+                <attributes>
+                  <attribute name="font-desc" value="Monospace Bold 12"/>
+                  <attribute name="foreground" value="#ffffffffffff"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="index">1</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkLabel" id="1year_interest">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-left">365</property>
+                <property name="margin-start">365</property>
+                <property name="margin-top">395</property>
+                <attributes>
+                  <attribute name="font-desc" value="Monospace Bold 12"/>
+                  <attribute name="foreground" value="#ffffffffffff"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="index">2</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkButton" id="uinterest_back_button">
+                <property name="width-request">140</property>
+                <property name="height-request">0</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-left">440</property>
+                <property name="margin-start">440</property>
+                <property name="margin-top">445</property>
+                <property name="relief">none</property>
+              </object>
+              <packing>
+                <property name="index">3</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="name">page10</property>
+            <property name="title" translatable="yes">page10</property>
+            <property name="position">20</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkStack" id="user_intloading_screen">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkImage" id="user_money_loading11">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_money_loading1.png</property>
+              </object>
+              <packing>
+                <property name="name">page0</property>
+                <property name="title" translatable="yes">page0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="user_money_loading12">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_money_loading2.png</property>
+              </object>
+              <packing>
+                <property name="name">page1</property>
+                <property name="title" translatable="yes">page1</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="user_money_loading13">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_money_loading3.png</property>
+              </object>
+              <packing>
+                <property name="name">page2</property>
+                <property name="title" translatable="yes">page2</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="user_money_loading14">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_money_loading4.png</property>
+              </object>
+              <packing>
+                <property name="name">page3</property>
+                <property name="title" translatable="yes">page3</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="user_money_loading15">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_money_loading5.png</property>
+              </object>
+              <packing>
+                <property name="name">page4</property>
+                <property name="title" translatable="yes">page4</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="name">page12</property>
+            <property name="title" translatable="yes">page12</property>
+            <property name="position">21</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkOverlay" id="user_intloading_screen2">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_bg.png</property>
+              </object>
+              <packing>
+                <property name="index">-1</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="label" translatable="yes">Interest Earning Calculated!</property>
+                <attributes>
+                  <attribute name="font-desc" value="Monospace Bold 14"/>
+                  <attribute name="foreground" value="#fffff6f60000"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="name">page11</property>
+            <property name="title" translatable="yes">page11</property>
             <property name="position">22</property>
           </packing>
+        </child>
+        <child>
+          <object class="GtkOverlay" id="user_time_deposit">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_time_deposit.png</property>
+              </object>
+              <packing>
+                <property name="index">-1</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkEntry" id="uname_timedep">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">475</property>
+                <property name="margin-top">175</property>
+                <property name="max-length">30</property>
+                <property name="has-frame">False</property>
+                <property name="invisible-char">●</property>
+                <property name="max-width-chars">30</property>
+                <property name="input-purpose">name</property>
+              </object>
+            </child>
+            <child type="overlay">
+              <object class="GtkEntry" id="uamount_timedep">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">470</property>
+                <property name="margin-top">255</property>
+                <property name="max-length">30</property>
+                <property name="has-frame">False</property>
+                <property name="invisible-char">●</property>
+                <property name="max-width-chars">30</property>
+                <property name="input-purpose">digits</property>
+              </object>
+              <packing>
+                <property name="index">1</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkEntry" id="urate_timedep">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">470</property>
+                <property name="margin-top">335</property>
+                <property name="max-length">30</property>
+                <property name="has-frame">False</property>
+                <property name="invisible-char">●</property>
+                <property name="max-width-chars">30</property>
+                <property name="input-purpose">digits</property>
+              </object>
+              <packing>
+                <property name="index">2</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkEntry" id="uterm_timedep">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">470</property>
+                <property name="margin-top">410</property>
+                <property name="max-length">30</property>
+                <property name="has-frame">False</property>
+                <property name="invisible-char">●</property>
+                <property name="max-width-chars">30</property>
+                <property name="input-purpose">digits</property>
+              </object>
+              <packing>
+                <property name="index">3</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkButton" id="uconfirm_timedep">
+                <property name="width-request">140</property>
+                <property name="height-request">0</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">440</property>
+                <property name="margin-top">485</property>
+                <property name="relief">none</property>
+              </object>
+              <packing>
+                <property name="index">4</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">23</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkStack" id="user_timeloading_screen">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkImage" id="user_money_loading6">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_money_loading1.png</property>
+              </object>
+              <packing>
+                <property name="name">page0</property>
+                <property name="title" translatable="yes">page0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="user_money_loading7">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_money_loading2.png</property>
+              </object>
+              <packing>
+                <property name="name">page1</property>
+                <property name="title" translatable="yes">page1</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="user_money_loading8">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_money_loading3.png</property>
+              </object>
+              <packing>
+                <property name="name">page2</property>
+                <property name="title" translatable="yes">page2</property>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="user_money_loading9">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_money_loading4.png</property>
+              </object>
+              <packing>
+                <property name="name">page3</property>
+                <property name="title" translatable="yes">page3</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkImage" id="user_money_loading10">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_money_loading5.png</property>
+              </object>
+              <packing>
+                <property name="name">page4</property>
+                <property name="title" translatable="yes">page4</property>
+                <property name="position">4</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="name">page17</property>
+            <property name="title" translatable="yes">page17</property>
+            <property name="position">24</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkOverlay" id="user_timeloading_screen2">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_bg.png</property>
+              </object>
+              <packing>
+                <property name="index">-1</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="halign">center</property>
+                <property name="valign">center</property>
+                <property name="label" translatable="yes">Time Deposit Calculated!</property>
+                <attributes>
+                  <attribute name="font-desc" value="Monospace Bold 14"/>
+                  <attribute name="foreground" value="#fffff6f60000"/>
+                </attributes>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="position">25</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkOverlay" id="time_deposit_summary">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\user_timedep_summary.png</property>
+              </object>
+              <packing>
+                <property name="index">-1</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkLabel" id="uname_timdep_summary">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">575</property>
+                <property name="margin-top">175</property>
+                <attributes>
+                  <attribute name="font-desc" value="Monospace Bold 12"/>
+                  <attribute name="foreground" value="#ffffffffffff"/>
+                </attributes>
+              </object>
+            </child>
+            <child type="overlay">
+              <object class="GtkLabel" id="uprin_timdep_summary">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">575</property>
+                <property name="margin-top">220</property>
+                <attributes>
+                  <attribute name="font-desc" value="Monospace Bold 12"/>
+                  <attribute name="foreground" value="#ffffffffffff"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="index">1</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkLabel" id="urate_timdep_summary">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">575</property>
+                <property name="margin-top">265</property>
+                <attributes>
+                  <attribute name="font-desc" value="Monospace Bold 12"/>
+                  <attribute name="foreground" value="#ffffffffffff"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="index">2</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkLabel" id="uterm_timdep_summary">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">575</property>
+                <property name="margin-top">315</property>
+                <attributes>
+                  <attribute name="font-desc" value="Monospace Bold 12"/>
+                  <attribute name="foreground" value="#ffffffffffff"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="index">3</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkLabel" id="umaturity_timdep_summary">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">575</property>
+                <property name="margin-top">360</property>
+                <attributes>
+                  <attribute name="font-desc" value="Monospace Bold 12"/>
+                  <attribute name="foreground" value="#ffffffffffff"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="index">4</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkLabel" id="udate_timdep_summary1">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">575</property>
+                <property name="margin-top">405</property>
+                <attributes>
+                  <attribute name="font-desc" value="Monospace Bold 12"/>
+                  <attribute name="foreground" value="#ffffffffffff"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="index">5</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkButton" id="uback_timedep_button">
+                <property name="width-request">140</property>
+                <property name="height-request">0</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">365</property>
+                <property name="margin-top">455</property>
+                <property name="relief">none</property>
+              </object>
+              <packing>
+                <property name="index">6</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkButton" id="uconfirm_timedep_button">
+                <property name="width-request">140</property>
+                <property name="height-request">0</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-start">520</property>
+                <property name="margin-top">455</property>
+                <property name="relief">none</property>
+              </object>
+              <packing>
+                <property name="index">7</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="name">page18</property>
+            <property name="title" translatable="yes">page18</property>
+            <property name="position">26</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkOverlay" id="bank_transfer">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkImage">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">pictures\bank_transfer.png</property>
+              </object>
+              <packing>
+                <property name="index">-1</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkEntry" id="sender_acc">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-left">365</property>
+                <property name="margin-start">365</property>
+                <property name="margin-top">220</property>
+                <property name="max-length">30</property>
+                <property name="has-frame">False</property>
+                <property name="invisible-char">●</property>
+                <property name="max-width-chars">30</property>
+                <property name="input-purpose">digits</property>
+              </object>
+            </child>
+            <child type="overlay">
+              <object class="GtkEntry" id="recipient_acc">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-left">365</property>
+                <property name="margin-start">365</property>
+                <property name="margin-top">300</property>
+                <property name="max-length">30</property>
+                <property name="visibility">False</property>
+                <property name="has-frame">False</property>
+                <property name="invisible-char">●</property>
+                <property name="max-width-chars">4</property>
+                <property name="input-purpose">pin</property>
+              </object>
+              <packing>
+                <property name="index">1</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkEntry" id="confirm_pass1">
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-left">410</property>
+                <property name="margin-start">410</property>
+                <property name="margin-top">377</property>
+                <property name="max-length">30</property>
+                <property name="has-frame">False</property>
+                <property name="invisible-char">●</property>
+                <property name="max-width-chars">30</property>
+                <property name="input-purpose">digits</property>
+              </object>
+              <packing>
+                <property name="index">2</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkButton" id="utransfer_back_button1">
+                <property name="width-request">140</property>
+                <property name="height-request">0</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-left">360</property>
+                <property name="margin-start">360</property>
+                <property name="margin-top">445</property>
+                <property name="relief">none</property>
+              </object>
+              <packing>
+                <property name="index">3</property>
+              </packing>
+            </child>
+            <child type="overlay">
+              <object class="GtkButton" id="utransfer_confirm_button">
+                <property name="width-request">140</property>
+                <property name="height-request">0</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="halign">start</property>
+                <property name="valign">start</property>
+                <property name="margin-left">515</property>
+                <property name="margin-start">515</property>
+                <property name="margin-top">445</property>
+                <property name="relief">none</property>
+              </object>
+              <packing>
+                <property name="index">4</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="name">page9</property>
+            <property name="title" translatable="yes">page9</property>
+            <property name="position">27</property>
+          </packing>
+        </child>
+        <child>
+          <placeholder/>
         </child>
         <child>
           <object class="GtkStack" id="user_bankloading_screen">
@@ -2089,11 +2605,11 @@
           <packing>
             <property name="name">page6</property>
             <property name="title" translatable="yes">page6</property>
-            <property name="position">23</property>
+            <property name="position">29</property>
           </packing>
         </child>
         <child>
-          <object class="GtkOverlay" id="user_bankloading_screen4">
+          <object class="GtkOverlay" id="user_bankloading_screen2">
             <property name="visible">True</property>
             <property name="can-focus">False</property>
             <child>
@@ -2123,7 +2639,7 @@
           <packing>
             <property name="name">page7</property>
             <property name="title" translatable="yes">page7</property>
-            <property name="position">24</property>
+            <property name="position">30</property>
           </packing>
         </child>
         <child>
@@ -2249,420 +2765,212 @@
           <packing>
             <property name="name">page8</property>
             <property name="title" translatable="yes">page8</property>
-            <property name="position">25</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkOverlay" id="bank_transfer">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\bank_transfer.png</property>
-              </object>
-              <packing>
-                <property name="index">-1</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkEntry" id="sender_acc">
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">365</property>
-                <property name="margin-start">365</property>
-                <property name="margin-top">220</property>
-                <property name="max-length">30</property>
-                <property name="has-frame">False</property>
-                <property name="invisible-char">●</property>
-                <property name="max-width-chars">30</property>
-                <property name="input-purpose">digits</property>
-              </object>
-            </child>
-            <child type="overlay">
-              <object class="GtkEntry" id="recipient_acc">
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">365</property>
-                <property name="margin-start">365</property>
-                <property name="margin-top">300</property>
-                <property name="max-length">30</property>
-                <property name="visibility">False</property>
-                <property name="has-frame">False</property>
-                <property name="invisible-char">●</property>
-                <property name="max-width-chars">4</property>
-                <property name="input-purpose">pin</property>
-              </object>
-              <packing>
-                <property name="index">1</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkEntry" id="confirm_pass1">
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">410</property>
-                <property name="margin-start">410</property>
-                <property name="margin-top">377</property>
-                <property name="max-length">30</property>
-                <property name="has-frame">False</property>
-                <property name="invisible-char">●</property>
-                <property name="max-width-chars">30</property>
-                <property name="input-purpose">digits</property>
-              </object>
-              <packing>
-                <property name="index">2</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="utransfer_back_button1">
-                <property name="width-request">140</property>
-                <property name="height-request">0</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">360</property>
-                <property name="margin-start">360</property>
-                <property name="margin-top">445</property>
-                <property name="relief">none</property>
-              </object>
-              <packing>
-                <property name="index">3</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="utransfer_confirm_button">
-                <property name="width-request">140</property>
-                <property name="height-request">0</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">515</property>
-                <property name="margin-start">515</property>
-                <property name="margin-top">445</property>
-                <property name="relief">none</property>
-              </object>
-              <packing>
-                <property name="index">4</property>
-              </packing>
-            </child>
-          </object>
-          <packing>
-            <property name="name">page9</property>
-            <property name="title" translatable="yes">page9</property>
-            <property name="position">26</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkOverlay" id="interest_calculator2">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\interest_calculator2.png</property>
-              </object>
-              <packing>
-                <property name="index">-1</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkLabel" id="1day_interest">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">365</property>
-                <property name="margin-start">365</property>
-                <property name="margin-top">240</property>
-                <attributes>
-                  <attribute name="font-desc" value="Monospace Bold 12"/>
-                  <attribute name="foreground" value="#ffffffffffff"/>
-                </attributes>
-              </object>
-            </child>
-            <child type="overlay">
-              <object class="GtkLabel" id="30day_interest">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">365</property>
-                <property name="margin-start">365</property>
-                <property name="margin-top">315</property>
-                <attributes>
-                  <attribute name="font-desc" value="Monospace Bold 12"/>
-                  <attribute name="foreground" value="#ffffffffffff"/>
-                </attributes>
-              </object>
-              <packing>
-                <property name="index">1</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkLabel" id="1year_interest">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">365</property>
-                <property name="margin-start">365</property>
-                <property name="margin-top">395</property>
-                <attributes>
-                  <attribute name="font-desc" value="Monospace Bold 12"/>
-                  <attribute name="foreground" value="#ffffffffffff"/>
-                </attributes>
-              </object>
-              <packing>
-                <property name="index">2</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="uinterest_back_button">
-                <property name="width-request">140</property>
-                <property name="height-request">0</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">440</property>
-                <property name="margin-start">440</property>
-                <property name="margin-top">445</property>
-                <property name="relief">none</property>
-              </object>
-              <packing>
-                <property name="index">3</property>
-              </packing>
-            </child>
-          </object>
-          <packing>
-            <property name="name">page10</property>
-            <property name="title" translatable="yes">page10</property>
-            <property name="position">27</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkOverlay" id="user_intloading_screen2">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_bg.png</property>
-              </object>
-              <packing>
-                <property name="index">-1</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkLabel">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="halign">center</property>
-                <property name="valign">center</property>
-                <property name="label" translatable="yes">Interest Earning Calculated!</property>
-                <attributes>
-                  <attribute name="font-desc" value="Monospace Bold 14"/>
-                  <attribute name="foreground" value="#fffff6f60000"/>
-                </attributes>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="name">page11</property>
-            <property name="title" translatable="yes">page11</property>
-            <property name="position">28</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkStack" id="user_intloading_screen">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <child>
-              <object class="GtkImage" id="user_money_loading11">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_money_loading1.png</property>
-              </object>
-              <packing>
-                <property name="name">page0</property>
-                <property name="title" translatable="yes">page0</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkImage" id="user_money_loading12">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_money_loading2.png</property>
-              </object>
-              <packing>
-                <property name="name">page1</property>
-                <property name="title" translatable="yes">page1</property>
-                <property name="position">1</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkImage" id="user_money_loading13">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_money_loading3.png</property>
-              </object>
-              <packing>
-                <property name="name">page2</property>
-                <property name="title" translatable="yes">page2</property>
-                <property name="position">2</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkImage" id="user_money_loading14">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_money_loading4.png</property>
-              </object>
-              <packing>
-                <property name="name">page3</property>
-                <property name="title" translatable="yes">page3</property>
-                <property name="position">3</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkImage" id="user_money_loading15">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_money_loading5.png</property>
-              </object>
-              <packing>
-                <property name="name">page4</property>
-                <property name="title" translatable="yes">page4</property>
-                <property name="position">4</property>
-              </packing>
-            </child>
-          </object>
-          <packing>
-            <property name="name">page12</property>
-            <property name="title" translatable="yes">page12</property>
-            <property name="position">29</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkOverlay" id="interest_calculator1">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\interest_calculator1.png</property>
-              </object>
-              <packing>
-                <property name="index">-1</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkEntry" id="user_balance">
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">405</property>
-                <property name="margin-start">405</property>
-                <property name="margin-top">285</property>
-                <property name="max-length">30</property>
-                <property name="has-frame">False</property>
-                <property name="max-width-chars">30</property>
-                <property name="input-purpose">digits</property>
-              </object>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="ucalcu_confirm_button">
-                <property name="width-request">140</property>
-                <property name="height-request">0</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">520</property>
-                <property name="margin-start">520</property>
-                <property name="margin-top">340</property>
-                <property name="relief">none</property>
-              </object>
-              <packing>
-                <property name="index">1</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkButton" id="ucalcu_back_button">
-                <property name="width-request">140</property>
-                <property name="height-request">0</property>
-                <property name="visible">True</property>
-                <property name="can-focus">True</property>
-                <property name="receives-default">True</property>
-                <property name="halign">start</property>
-                <property name="valign">start</property>
-                <property name="margin-left">365</property>
-                <property name="margin-start">365</property>
-                <property name="margin-top">340</property>
-                <property name="relief">none</property>
-              </object>
-              <packing>
-                <property name="index">1</property>
-              </packing>
-            </child>
-          </object>
-          <packing>
-            <property name="name">page13</property>
-            <property name="title" translatable="yes">page13</property>
-            <property name="position">30</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkOverlay" id="user_bankloading_screen2">
-            <property name="visible">True</property>
-            <property name="can-focus">False</property>
-            <child>
-              <object class="GtkImage">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="pixbuf">pictures\user_bg.png</property>
-              </object>
-              <packing>
-                <property name="index">-1</property>
-              </packing>
-            </child>
-            <child type="overlay">
-              <object class="GtkLabel">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-                <property name="halign">center</property>
-                <property name="valign">center</property>
-                <property name="label" translatable="yes">Transaction Success!</property>
-                <attributes>
-                  <attribute name="font-desc" value="Monospace Bold 14"/>
-                  <attribute name="foreground" value="#fffff6f60000"/>
-                </attributes>
-              </object>
-            </child>
-          </object>
-          <packing>
-            <property name="name">page14</property>
-            <property name="title" translatable="yes">page14</property>
             <property name="position">31</property>
           </packing>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
+        </child>
+        <child>
+          <placeholder/>
         </child>
       </object>
     </child>
